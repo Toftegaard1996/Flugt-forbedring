@@ -9,10 +9,12 @@ let spørgsmål1Status = true;
 let spørgsmål1 = function() {
     let getSpørgsmål1 = document.querySelector(".spørgsmål1");
     let getKort = document.querySelector(".kortKnapper");
+    let getKnap1 = document.querySelector(".knap1");
     
     if (spørgsmål1Status === true) {
         getSpørgsmål1.style.visibility = "hidden";
         getKort.style.visibility = "visible";
+        getKnap1.style.backgroundColor = "#4caf50";
     }
 }
 
@@ -21,10 +23,12 @@ let spørgsmål2Status = true;
 let spørgsmål2 = function() {
     let getSpørgsmål2 = document.querySelector(".spørgsmål2");
     let getKort = document.querySelector(".kortKnapper");
+    let getKnap2 = document.querySelector(".knap2");
     
     if (spørgsmål1Status === true) {
         getSpørgsmål2.style.visibility = "hidden";
         getKort.style.visibility = "visible";
+        getKnap2.style.backgroundColor = "#4caf50";
     }
 }
 
@@ -33,10 +37,12 @@ let spørgsmål3Status = true;
 let spørgsmål3 = function() {
     let getSpørgsmål3 = document.querySelector(".spørgsmål3");
     let getKort = document.querySelector(".kortKnapper");
+    let getKnap3 = document.querySelector(".knap3");
     
     if (spørgsmål3Status === true) {
         getSpørgsmål3.style.visibility = "hidden";
         getKort.style.visibility = "visible";
+        getKnap3.style.backgroundColor = "#4caf50";
     }
 }
 
@@ -45,10 +51,12 @@ let spørgsmål4Status = true;
 let spørgsmål4 = function() {
     let getSpørgsmål4 = document.querySelector(".spørgsmål4");
     let getKort = document.querySelector(".kortKnapper");
+    let getKnap4 = document.querySelector(".knap4");
     
     if (spørgsmål4Status === true) {
         getSpørgsmål4.style.visibility = "hidden";
         getKort.style.visibility = "visible";
+        getKnap4.style.backgroundColor = "#4caf50";
     }
 }
 
@@ -57,10 +65,26 @@ let spørgsmål5Status = true;
 let spørgsmål5 = function() {
     let getSpørgsmål5 = document.querySelector(".spørgsmål5");
     let getKort = document.querySelector(".kortKnapper");
+    let getKnap5 = document.querySelector(".knap5");
     
     if (spørgsmål5Status === true) {
         getSpørgsmål5.style.visibility = "hidden";
         getKort.style.visibility = "visible";
+        getKnap5.style.backgroundColor = "#4caf50";
+    }
+}
+
+let spørgsmål6Status = true;
+
+let spørgsmål6 = function() {
+    let getSpørgsmål6 = document.querySelector(".spørgsmål6");
+    let getKort = document.querySelector(".kortKnapper");
+    let getKnap6 = document.querySelector(".knap6");
+    
+    if (spørgsmål6Status === true) {
+        getSpørgsmål6.style.visibility = "hidden";
+        getKort.style.visibility = "visible";
+        getKnap6.style.backgroundColor = "#4caf50";
     }
 }
 
@@ -69,6 +93,7 @@ let knap1Status = true;
 let knap1 = function() {
     let getSpørgsmål1 = document.querySelector(".spørgsmål1");
     let getKort = document.querySelector(".kortKnapper");
+    let getInfo = document.querySelector(".info");
     
     if (knap1Status === true) {
         getKort.style.visibility = "hidden";
@@ -168,15 +193,18 @@ function check(){
     }
     document.querySelector(".number_correct").innerHTML = "Du fik " + correct + " rigtige ud af 6"
     
-    let spørgsmål6Status = true;
-
-        let getSpørgsmål6 = document.querySelector(".spørgsmål6");
-        let getResultat = document.querySelector(".after_submit");
+    let finishStatus = true;
     
-        if (spørgsmål6Status === true) {
-            getSpørgsmål6.style.visibility = "hidden";
-            getResultat.style.visibility = "visible";
-        }
+    let getFinish = document.querySelector(".after_submit");
+    let getKort = document.querySelector(".kortKnapper");
+    let getDone = document.querySelector(".finish");
+    
+    if (finishStatus === true) {
+        getFinish.style.visibility = "visible";
+        getKort.style.visibility = "hidden";
+        getDone.style.visibility = "hidden";
+    }
+    
 }
     
 function feedback() {

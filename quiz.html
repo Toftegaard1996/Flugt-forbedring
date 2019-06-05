@@ -43,7 +43,7 @@
                  type="button">11</button>
                  <button onclick="" class="knap12"
                  type="button">12</button>
-                 <h4>Velkommen! For hver post er der et spørgsmål, svar rigtig på så mange som mulig og se om du kan vinde noget. Du kan tage posterne i rækkefølge eller tilfældigt. Klik på et tal for at gå i gang.</h4>
+                 <h4 class="info">Velkommen! For hver post er der et spørgsmål, svar rigtig på så mange som mulig og se om du kan vinde noget. Du kan tage posterne i rækkefølge eller tilfældigt. Klik på et tal for at gå i gang.</h4>
                 
              </div>
              <form id="quiz" name="quiz">
@@ -70,9 +70,9 @@
              </div>
              <div class="spørgsmål4">
                     <h2 class="spørgsmål">Hvad skete der med lejren efter den sidste flygtning tog hjem?</h2>
-                    <p><input type="radio" name="question4" value="right" id="mc" />Lejren blev nedlagt da Danmark manglede resourcer</p>
-                    <p><input type="radio" name="question4" value="wrong" id="mc" />Danskerne brugte den til at huse de syge og skadet</p>
-                    <p><input type="radio" name="question4" value="wrong" id="mc" />Den stod urørt i 10 år inden der blev taget en beslutning om hvad der skulle ske</p>
+                    <p><input type="radio" name="question4" value="right" id="mc" />Lejren blev nedlagt pga. manglede resourcer</p>
+                    <p><input type="radio" name="question4" value="wrong" id="mc" />Til at huse de syge og skadet</p>
+                    <p><input type="radio" name="question4" value="wrong" id="mc" />Den stod urørt i 10 år</p>
                     <button class="next" onclick="spørgsmål4()" type="button">Næste</button>
              </div>
              <div class="spørgsmål5">
@@ -87,10 +87,11 @@
                     <p><input type="radio" name="question6" value="right" id="mc" />1100</p>
                     <p><input type="radio" name="question6" value="wrong" id="mc" />1700</p>
                     <p><input type="radio" name="question6" value="wrong" id="mc" />2300</p>
-                    <button class="next" onclick="check()" type="button">Resultat</button>
+                    <button class="next" onclick="spørgsmål6()" type="button">Næste</button>
              </div>
             </form>
              
+             <button class="finish" onclick="check()" type="button">Færdig</button>
             
             <div class="after_submit">
                 <h3 class="number_correct"></h3>

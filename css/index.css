@@ -311,6 +311,17 @@ h4{
     margin-top: 70%;
 }
 
+.finish{
+    position: absolute;
+    width: 25%;
+    height: 8%;
+    font-size: 300%;
+    margin-left: 71%;
+    margin-top: 122%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px grey;
+}
+
 #mc {
     margin-bottom: 20px;
     width: 60px;
@@ -385,7 +396,8 @@ h4{
 
 .tilbagepil{
     margin-top: 125%;
-    margin-left: 5%;
+    margin-left: 3%;
+    box-shadow: 10px 10px 10px grey;
 }
 
 
