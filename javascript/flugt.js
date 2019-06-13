@@ -180,6 +180,7 @@ function check(){
         correct++;
     }
     if(question3 == "right"){
+        
         correct++;
     }
     if(question4 == "right"){

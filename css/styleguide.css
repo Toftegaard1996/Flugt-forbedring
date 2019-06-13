@@ -5,10 +5,9 @@ body {
 }
 
 .logo {
-    margin-left: 37%;
+    margin-left: 25%;
     position: absolute;
-
-
+    width: 50%;
 }
 
 .baggrund {
@@ -111,4 +110,9 @@ hr{
 
 .lavet{
     text-align: center;
+}
+
+.font{
+    text-align: center;
+    font-size: 150%;
 }
